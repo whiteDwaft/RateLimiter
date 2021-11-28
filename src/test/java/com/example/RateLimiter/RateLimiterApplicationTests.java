@@ -34,8 +34,8 @@ class RateLimiterApplicationTests {
 		while(time < 17000 || time > 18000){
 			time = System.currentTimeMillis() - window.startTimestamp;
 		}
-		assertEquals(3,window.defaultNumberOfRequests);
-		assertEquals(3,window.timestamps.size());
+		assertEquals(3, window.defaultNumberOfRequests);
+		assertEquals(3, window.timestamps.size());
 	}
 
 	@Test
@@ -45,12 +45,7 @@ class RateLimiterApplicationTests {
 		while(time < 5000 || time > 6000){
 			time = System.currentTimeMillis() - window.startTimestamp;
 		}
-		assertEquals(3,window.defaultNumberOfRequests);
-		assertEquals(3,window.timestamps.size());
+		assertEquals(3, window.defaultNumberOfRequests);
+		assertEquals(3, window.timestamps.size());
 	}
-
-
-
-
-
 }
